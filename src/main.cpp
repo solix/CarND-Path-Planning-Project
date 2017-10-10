@@ -220,7 +220,7 @@ int main() {
           	double car_y = j[1]["y"];
           	double car_s = j[1]["s"];
           	double car_d = j[1]["d"];
-          	double car_yaw = j[1]["yaw"];
+          	double car_yaw = j[1]["yaw"]; //car angle
           	double car_speed = j[1]["speed"];
 
           	// Previous path data given to the Planner
@@ -240,7 +240,17 @@ int main() {
 
 
           	// TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
-          	msgJson["next_x"] = next_x_vals;
+          	double dist_inc = 0.5;
+            for(int i = 0; i < 50; i++)
+          {
+            double next_s = car_s + (i+1)*dist_inc;
+            double next_d = 6;
+            vector<double> next_xy = getXY(next_s,next_d,map_waypoints_s, map_waypoints_x,  map_waypoints_y);
+            next_x_vals.push_back(next_xy[0]);
+            next_y_vals.push_back(next_xy[1]);
+          }
+            //END
+            msgJson["next_x"] = next_x_vals;
           	msgJson["next_y"] = next_y_vals;
 
           	auto msg = "42[\"control\","+ msgJson.dump()+"]";
