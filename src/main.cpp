@@ -8,6 +8,7 @@
 #include "Eigen-3.3/Eigen/Core"
 #include "Eigen-3.3/Eigen/QR"
 #include "json.hpp"
+#include "spline.h"
 
 using namespace std;
 
@@ -239,8 +240,50 @@ int main() {
           	vector<double> next_y_vals;
 
 
-          	// TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
-          	double dist_inc = 0.5;
+
+          	//My TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
+          	vector<double> ptsx_spaced;
+            vector<double> ptsy_spaced;
+            double ref_car_x = car_x;
+            double ref_car_y = car_y;
+            double ref_angle = deg2rad(car_yaw);
+            int path_size_ref = previous_path_x.size();
+
+            if(path_size_ref < 2) {
+
+              double prev_carx = ref_car_x - cos(car_yaw);
+              double prev_cary = ref_car_y - sin(car_yaw);
+
+              ptsx_spaced.push_back(prev_carx);
+              ptsx_spaced.push_back(car_x);
+
+              ptsy_spaced.push_back(prev_cary);
+              ptsy_spaced.push_back(car_y);
+
+
+            }else{
+
+              ref_car_x = previous_path_x[path_size_ref-1];
+              ref_car_y = previous_path_y[path_size_ref-1];
+
+              double ref_x_prev = previous_path_x[path_size_ref-2];
+              double ref_y_prev = previous_path_y[path_size_ref-2];
+              ref_angle = atan2(ref_car_y-ref_y_prev,ref_car_x - ref_x_prev);
+
+              ptsx_spaced.push_back(ref_x_prev);
+              ptsx_spaced.push_back(ref_car_x);
+
+              ptsy_spaced.push_back(ref_y_prev);
+              ptsy_spaced.push_back(ref_car_y);
+
+
+            }
+
+            
+
+            //define some points spaced good for spline
+
+            double dist_inc = 0.3;
             for(int i = 0; i < 50; i++)
           {
             double next_s = car_s + (i+1)*dist_inc;
@@ -249,6 +292,7 @@ int main() {
             next_x_vals.push_back(next_xy[0]);
             next_y_vals.push_back(next_xy[1]);
           }
+
             //END
             msgJson["next_x"] = next_x_vals;
           	msgJson["next_y"] = next_y_vals;
