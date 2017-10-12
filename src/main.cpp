@@ -200,7 +200,7 @@ int main() {
   //define two variables to keep track of lane numbers (3 in total) and refrence velocity i.e. 50 mph
 
     int lane = 1; //start off by choosing lane 1
-    double ref_vel = 49.5;  
+    double ref_vel = 0.0;  
 
   h.onMessage([&ref_vel,&map_waypoints_x,&map_waypoints_y,&map_waypoints_s,&map_waypoints_dx,&map_waypoints_dy,&lane](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length,
                      uWS::OpCode opCode) {
@@ -240,16 +240,68 @@ int main() {
           	// Sensor Fusion Data, a list of all other cars on the same side of the road.
           	auto sensor_fusion = j[1]["sensor_fusion"];
             int prev_size = previous_path_x.size();
-          	
+          	//My TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
+          	 
+            //check sensor fusion list and monitor the cars in the road
+
+            //frenet is a great help
+            if(prev_size > 0){
+              car_s = end_path_s;
+            }
+            bool illegal_distance = false;
+
+
+            for(int i = 0; i < sensor_fusion.size(); i++)
+            {
+               int other_car_id = sensor_fusion[i][0];
+               double other_car_x = sensor_fusion[i][1];
+               double other_car_y = sensor_fusion[i][2];
+               double other_car_vx = sensor_fusion[i][3];
+               double other_car_vy = sensor_fusion[i][4];
+               float other_car_s = sensor_fusion[i][5];
+               float other_car_d = sensor_fusion[i][6];
+
+
+               //if the car is in the same lane as our car then we 
+               //are interested to control car speed and distance
+               if(other_car_d < (2+4*lane+2) && other_car_d > (2+4*lane-2) ){
+                //predict where the other car will be in the future
+                double other_car_speed = sqrt(other_car_vx*other_car_vx+other_car_vy*other_car_vy);
+
+                other_car_s+= ((double) prev_size*0.02*other_car_speed);
+
+
+               
+
+               //if we are approaching a car infront then do some action
+               if((other_car_s > car_s) && ((other_car_s - car_s) < 20))
+               {
+
+
+                illegal_distance = true;
+
+                if(lane == 1){
+                  lane = lane -1;
+                }
+
+
+               }
+
+               }
+               }
+
+               if(illegal_distance){
+                ref_vel -= .224; 
+               }
+               else if(ref_vel <49.5){
+                ref_vel += .224;
+               }
+
+
 
             
 
-          	
-
-
-
-          	//My TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
-          	vector<double> ptsx; //for fitting spline into it
+            vector<double> ptsx; //for fitting spline into it
             vector<double> ptsy;
             
             double ref_x = car_x;
