@@ -290,9 +290,9 @@ int main() {
 
             //lets create 3 spaced waypoints sothat we can fit a spline to it and then we augment more points from there
 
-            std::vector<double> next_wp0 = getXY(car_s+30,(6), map_waypoints_s,map_waypoints_x,map_waypoints_y);
-            std::vector<double> next_wp1 =  getXY(car_s+60,(6), map_waypoints_s,map_waypoints_x,map_waypoints_y);;
-            std::vector<double> next_wp2 =  getXY(car_s+90,(6), map_waypoints_s,map_waypoints_x,map_waypoints_y);;
+            std::vector<double> next_wp0 = getXY(car_s+30,(2+4*lane), map_waypoints_s,map_waypoints_x,map_waypoints_y);
+            std::vector<double> next_wp1 =  getXY(car_s+60,(2+4*lane), map_waypoints_s,map_waypoints_x,map_waypoints_y);;
+            std::vector<double> next_wp2 =  getXY(car_s+90,(2+4*lane), map_waypoints_s,map_waypoints_x,map_waypoints_y);;
 
             //push these points to our spaced waypoint collection
 
@@ -312,8 +312,10 @@ int main() {
               double shift_x = ptsx[i] - ref_x;
               double shift_y = ptsy[i] - ref_y;
 
+
+
               ptsx[i] = (shift_x *cos(0-ref_angle)-shift_y*sin(0-ref_angle));
-              ptsy[i] = (shift_x *sin(0-ref_angle)+shift_y*sin(0-ref_angle));
+              ptsy[i] = (shift_x *sin(0-ref_angle)+shift_y*cos(0-ref_angle));
             }  
             // add 5 points that created to make spline  
             tk::spline s;
@@ -355,6 +357,8 @@ int main() {
             //now we need to transform local coordinate to global coordinate
             x_point = (x_ref*cos(ref_angle)-y_ref*sin(ref_angle));
             y_point = (x_ref*sin(ref_angle)+y_ref*cos(ref_angle));
+
+             cout<<ref_angle<<endl;
 
             x_point += ref_x;
             y_point += ref_y;

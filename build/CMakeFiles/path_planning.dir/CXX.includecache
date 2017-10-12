@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Cholesky
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Cholesky
 Core
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 src/Cholesky/LLT.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT.h
 src/Cholesky/LDLT.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h
 src/misc/lapacke.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
 src/Cholesky/LLT_LAPACKE.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h
 src/Core/util/ReenableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 math_functions.hpp
 -
 new
 -
 src/Core/util/Macros.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Macros.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Macros.h
 complex
 -
 src/Core/util/MKL_support.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/MKL_support.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/MKL_support.h
 malloc.h
 -
 immintrin.h
@@ -102,613 +102,613 @@ iostream
 intrin.h
 -
 src/Core/util/Constants.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Constants.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Constants.h
 src/Core/util/Meta.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Meta.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Meta.h
 src/Core/util/ForwardDeclarations.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ForwardDeclarations.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ForwardDeclarations.h
 src/Core/util/StaticAssert.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h
 src/Core/util/XprHelper.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h
 src/Core/util/Memory.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Memory.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Memory.h
 src/Core/NumTraits.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NumTraits.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NumTraits.h
 src/Core/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctions.h
 src/Core/GenericPacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GenericPacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GenericPacketMath.h
 src/Core/MathFunctionsImpl.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctionsImpl.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctionsImpl.h
 src/Core/arch/SSE/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/AVX/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
 src/Core/arch/AVX512/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/PacketMath.h
 src/Core/arch/AVX512/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/MathFunctions.h
 src/Core/arch/SSE/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/SSE/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
 src/Core/arch/SSE/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
 src/Core/arch/AVX/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
 src/Core/arch/AVX/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/MathFunctions.h
 src/Core/arch/AVX/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/Complex.h
 src/Core/arch/AVX/TypeCasting.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/TypeCasting.h
 src/Core/arch/SSE/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/SSE/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
 src/Core/arch/SSE/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
 src/Core/arch/SSE/TypeCasting.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/TypeCasting.h
 src/Core/arch/AltiVec/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/PacketMath.h
 src/Core/arch/AltiVec/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
 src/Core/arch/AltiVec/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/Complex.h
 src/Core/arch/NEON/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/PacketMath.h
 src/Core/arch/NEON/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/MathFunctions.h
 src/Core/arch/NEON/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/Complex.h
 src/Core/arch/ZVector/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/PacketMath.h
 src/Core/arch/ZVector/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/MathFunctions.h
 src/Core/arch/ZVector/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/Complex.h
 src/Core/arch/CUDA/Half.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Half.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Half.h
 src/Core/arch/CUDA/PacketMathHalf.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
 src/Core/arch/CUDA/TypeCasting.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/TypeCasting.h
 src/Core/arch/CUDA/PacketMath.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMath.h
 src/Core/arch/CUDA/MathFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/MathFunctions.h
 src/Core/arch/Default/Settings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/Default/Settings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/Default/Settings.h
 src/Core/functors/TernaryFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/TernaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/TernaryFunctors.h
 src/Core/functors/BinaryFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/BinaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/BinaryFunctors.h
 src/Core/functors/UnaryFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/UnaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/UnaryFunctors.h
 src/Core/functors/NullaryFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/NullaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/NullaryFunctors.h
 src/Core/functors/StlFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/StlFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/StlFunctors.h
 src/Core/functors/AssignmentFunctors.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/AssignmentFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/AssignmentFunctors.h
 src/Core/arch/CUDA/Complex.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Complex.h
 src/Core/IO.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/IO.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/IO.h
 src/Core/DenseCoeffsBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseCoeffsBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseCoeffsBase.h
 src/Core/DenseBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseBase.h
 src/Core/MatrixBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MatrixBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MatrixBase.h
 src/Core/EigenBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/EigenBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/EigenBase.h
 src/Core/Product.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Product.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Product.h
 src/Core/CoreEvaluators.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreEvaluators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreEvaluators.h
 src/Core/AssignEvaluator.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/AssignEvaluator.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/AssignEvaluator.h
 src/Core/Assign.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign.h
 src/Core/ArrayBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayBase.h
 src/Core/util/BlasUtil.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/BlasUtil.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/BlasUtil.h
 src/Core/DenseStorage.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseStorage.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseStorage.h
 src/Core/NestByValue.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NestByValue.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NestByValue.h
 src/Core/ReturnByValue.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ReturnByValue.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ReturnByValue.h
 src/Core/NoAlias.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NoAlias.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NoAlias.h
 src/Core/PlainObjectBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PlainObjectBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PlainObjectBase.h
 src/Core/Matrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Matrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Matrix.h
 src/Core/Array.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Array.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Array.h
 src/Core/CwiseTernaryOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseTernaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseTernaryOp.h
 src/Core/CwiseBinaryOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseBinaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseBinaryOp.h
 src/Core/CwiseUnaryOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryOp.h
 src/Core/CwiseNullaryOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseNullaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseNullaryOp.h
 src/Core/CwiseUnaryView.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryView.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryView.h
 src/Core/SelfCwiseBinaryOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfCwiseBinaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfCwiseBinaryOp.h
 src/Core/Dot.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Dot.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Dot.h
 src/Core/StableNorm.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/StableNorm.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/StableNorm.h
 src/Core/Stride.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Stride.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Stride.h
 src/Core/MapBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MapBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MapBase.h
 src/Core/Map.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Map.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Map.h
 src/Core/Ref.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Ref.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Ref.h
 src/Core/Block.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Block.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Block.h
 src/Core/VectorBlock.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorBlock.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorBlock.h
 src/Core/Transpose.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpose.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpose.h
 src/Core/DiagonalMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalMatrix.h
 src/Core/Diagonal.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Diagonal.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Diagonal.h
 src/Core/DiagonalProduct.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalProduct.h
 src/Core/Redux.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Redux.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Redux.h
 src/Core/Visitor.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Visitor.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Visitor.h
 src/Core/Fuzzy.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Fuzzy.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Fuzzy.h
 src/Core/Swap.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Swap.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Swap.h
 src/Core/CommaInitializer.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CommaInitializer.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CommaInitializer.h
 src/Core/GeneralProduct.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GeneralProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GeneralProduct.h
 src/Core/Solve.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Solve.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Solve.h
 src/Core/Inverse.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Inverse.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Inverse.h
 src/Core/SolverBase.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolverBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolverBase.h
 src/Core/PermutationMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PermutationMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PermutationMatrix.h
 src/Core/Transpositions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpositions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpositions.h
 src/Core/TriangularMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/TriangularMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/TriangularMatrix.h
 src/Core/SelfAdjointView.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfAdjointView.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfAdjointView.h
 src/Core/products/GeneralBlockPanelKernel.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 src/Core/products/Parallelizer.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/Parallelizer.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/Parallelizer.h
 src/Core/ProductEvaluators.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ProductEvaluators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ProductEvaluators.h
 src/Core/products/GeneralMatrixVector.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector.h
 src/Core/products/GeneralMatrixMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix.h
 src/Core/SolveTriangular.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolveTriangular.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolveTriangular.h
 src/Core/products/GeneralMatrixMatrixTriangular.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
 src/Core/products/SelfadjointMatrixVector.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector.h
 src/Core/products/SelfadjointMatrixMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
 src/Core/products/SelfadjointProduct.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointProduct.h
 src/Core/products/SelfadjointRank2Update.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointRank2Update.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointRank2Update.h
 src/Core/products/TriangularMatrixVector.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector.h
 src/Core/products/TriangularMatrixMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix.h
 src/Core/products/TriangularSolverMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix.h
 src/Core/products/TriangularSolverVector.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverVector.h
 src/Core/BandMatrix.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BandMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BandMatrix.h
 src/Core/CoreIterators.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreIterators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreIterators.h
 src/Core/ConditionEstimator.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ConditionEstimator.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ConditionEstimator.h
 src/Core/BooleanRedux.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BooleanRedux.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BooleanRedux.h
 src/Core/Select.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Select.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Select.h
 src/Core/VectorwiseOp.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorwiseOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorwiseOp.h
 src/Core/Random.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Random.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Random.h
 src/Core/Replicate.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Replicate.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Replicate.h
 src/Core/Reverse.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Reverse.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Reverse.h
 src/Core/ArrayWrapper.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayWrapper.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayWrapper.h
 src/Core/products/GeneralMatrixMatrix_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
 src/Core/products/GeneralMatrixVector_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
 src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
 src/Core/products/SelfadjointMatrixMatrix_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
 src/Core/products/SelfadjointMatrixVector_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
 src/Core/products/TriangularMatrixMatrix_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
 src/Core/products/TriangularMatrixVector_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
 src/Core/products/TriangularSolverMatrix_BLAS.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
 src/Core/Assign_MKL.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign_MKL.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign_MKL.h
 src/Core/GlobalFunctions.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GlobalFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GlobalFunctions.h
 src/Core/util/ReenableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Householder
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Householder
 Core
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 src/Householder/Householder.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/Householder.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/Householder.h
 src/Householder/HouseholderSequence.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h
 src/Householder/BlockHouseholder.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h
 src/Core/util/ReenableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Jacobi
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Jacobi
 Core
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 src/Jacobi/Jacobi.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h
 src/Core/util/ReenableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/QR
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/QR
 Core
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 Cholesky
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Cholesky
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Cholesky
 Jacobi
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Jacobi
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Jacobi
 Householder
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Householder
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Householder
 src/QR/HouseholderQR.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h
 src/QR/FullPivHouseholderQR.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h
 src/QR/ColPivHouseholderQR.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h
 src/QR/CompleteOrthogonalDecomposition.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
 src/misc/lapacke.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
 src/QR/HouseholderQR_LAPACKE.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h
 src/QR/ColPivHouseholderQR_LAPACKE.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
 src/Core/util/ReenableStupidWarnings.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Array.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Array.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayBase.h
 ../plugins/CommonCwiseUnaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
 ../plugins/MatrixCwiseUnaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 ../plugins/ArrayCwiseUnaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
 ../plugins/CommonCwiseBinaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
 ../plugins/MatrixCwiseBinaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 ../plugins/ArrayCwiseBinaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayWrapper.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ArrayWrapper.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/AssignEvaluator.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/AssignEvaluator.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign_MKL.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Assign_MKL.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BandMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BandMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Block.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Block.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BooleanRedux.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/BooleanRedux.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CommaInitializer.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CommaInitializer.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ConditionEstimator.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ConditionEstimator.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreEvaluators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreEvaluators.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreIterators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CoreIterators.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseBinaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseBinaryOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseNullaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseNullaryOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseTernaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseTernaryOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryView.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/CwiseUnaryView.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseBase.h
 ../plugins/BlockMethods.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/BlockMethods.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/BlockMethods.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseCoeffsBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseCoeffsBase.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseStorage.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DenseStorage.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Diagonal.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Diagonal.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/DiagonalProduct.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Dot.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Dot.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/EigenBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/EigenBase.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Fuzzy.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Fuzzy.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GeneralProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GeneralProduct.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GenericPacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GenericPacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GlobalFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/GlobalFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/IO.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/IO.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Inverse.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Inverse.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Map.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Map.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MapBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MapBase.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctionsImpl.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MathFunctionsImpl.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Matrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Matrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MatrixBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/MatrixBase.h
 ../plugins/CommonCwiseUnaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
 ../plugins/CommonCwiseBinaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
 ../plugins/MatrixCwiseUnaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 ../plugins/MatrixCwiseBinaryOps.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NestByValue.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NestByValue.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NoAlias.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NoAlias.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NumTraits.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/NumTraits.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PermutationMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PermutationMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PlainObjectBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/PlainObjectBase.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Product.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Product.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ProductEvaluators.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ProductEvaluators.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Random.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Random.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Redux.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Redux.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Ref.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Ref.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Replicate.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Replicate.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ReturnByValue.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/ReturnByValue.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Reverse.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Reverse.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Select.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Select.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfAdjointView.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfAdjointView.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfCwiseBinaryOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SelfCwiseBinaryOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Solve.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Solve.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolveTriangular.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolveTriangular.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolverBase.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/SolverBase.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/StableNorm.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/StableNorm.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Stride.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Stride.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Swap.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Swap.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpose.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpose.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpositions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Transpositions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/TriangularMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/TriangularMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorBlock.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorBlock.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorwiseOp.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/VectorwiseOp.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Visitor.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/Visitor.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX/TypeCasting.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AVX512/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Half.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Half.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/CUDA/TypeCasting.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/Default/Settings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/Default/Settings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/NEON/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/TypeCasting.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/SSE/TypeCasting.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/Complex.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/Complex.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/MathFunctions.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/MathFunctions.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/PacketMath.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/arch/ZVector/PacketMath.h
 stdint.h
 -
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/AssignmentFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/AssignmentFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/BinaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/BinaryFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/NullaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/NullaryFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/StlFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/StlFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/TernaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/TernaryFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/UnaryFunctors.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/functors/UnaryFunctors.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/Parallelizer.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/Parallelizer.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointProduct.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointProduct.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointRank2Update.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/SelfadjointRank2Update.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverVector.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverVector.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/BlasUtil.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/BlasUtil.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Constants.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Constants.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ForwardDeclarations.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ForwardDeclarations.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/MKL_support.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/MKL_support.h
 mkl.h
 -
 ../../misc/blas.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/blas.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/blas.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Macros.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Macros.h
 cstdlib
 -
 iostream
 -
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Memory.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Memory.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Meta.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/Meta.h
 cfloat
 -
 math_constants.h
@@ -716,37 +716,37 @@ math_constants.h
 cstdint
 -
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/Householder.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/Householder.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/blas.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/blas.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
 lapacke_config.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_config.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_config.h
 stdlib.h
 -
 complex.h
@@ -754,25 +754,25 @@ complex.h
 complex.h
 -
 lapacke_mangling.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/BlockMethods.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/BlockMethods.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/json.hpp
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/json.hpp
 algorithm
 -
 array
@@ -828,7 +828,7 @@ utility
 vector
 -
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/main.cpp
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/main.cpp
 fstream
 -
 math.h
@@ -844,15 +844,15 @@ thread
 vector
 -
 Eigen-3.3/Eigen/Core
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
 Eigen-3.3/Eigen/QR
-/Users/solix/Projects/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/QR
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/QR
 json.hpp
-/Users/solix/Projects/CarND-Path-Planning-Project/src/json.hpp
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/json.hpp
 spline.h
-/Users/solix/Projects/CarND-Path-Planning-Project/src/spline.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/spline.h
 
-/Users/solix/Projects/CarND-Path-Planning-Project/src/spline.h
+/Users/soheiljahanshahi/Documents/udacity/CarND-Path-Planning-Project/src/spline.h
 cstdio
 -
 cassert
