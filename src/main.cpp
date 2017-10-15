@@ -378,6 +378,9 @@ int main() {
                     cout << "changing state LCL safe" << endl;
                     current_state = LCL;
 
+                  } else {
+                    closest_distance = dist_s;
+                    current_state = Lane_Keep;
                   }
 
                   cout << "left lane gap: " << dist_s << endl;
@@ -408,11 +411,14 @@ int main() {
 
                   }
 
-                  if (lane_safe && abs(dist_s) > 25 ) {
+                  if (lane_safe && abs(dist_s) > 25  ) {
                     manoeuvre_safe = true;
                     cout << "changing state LCR safe" << endl;
                     current_state = LCR;
 
+                  } else{
+                    closest_distance = dist_s;
+                    current_state = Lane_Keep;
                   }
                   cout << "right lane gap: " << dist_s << endl;
 
@@ -431,11 +437,13 @@ int main() {
                   lane -= 1;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
+                  left_lane_safe = true;
                 }
                 if (current_state == LCR) {
                   lane += 1;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
+                  left_lane_safe = true;
                 }
                 manoeuvre_safe = false;
                 current_state = next_state;
@@ -452,9 +460,9 @@ int main() {
           else if (ref_vel < 49.5 ) {
             ref_vel += .224;
           }
-          cout <<"current_state: "<< current_state<<endl;
-          cout << "current_lane: " << lane <<endl;
-          cout << "closest_distance: " << closest_distance <<endl;
+          // cout <<"current_state: "<< current_state<<endl;
+          // cout << "current_lane: " << lane <<endl;
+          // cout << "closest_distance: " << closest_distance <<endl;
 
 
 
