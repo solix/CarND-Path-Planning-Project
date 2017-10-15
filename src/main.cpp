@@ -269,6 +269,7 @@ int main() {
             car_s = end_path_s;
           }
           bool illegal_distance = false;
+          int closest_distance = 80000;
 
 
           for (int i = 0; i < sensor_fusion.size(); i++)
@@ -290,14 +291,24 @@ int main() {
 
               other_car_s += ((double) prev_size * 0.02 * other_car_speed);
 
+              int distance_to_front_car = (other_car_s - car_s);
+
               //if we are approaching a car infront then do some action
-              if ((other_car_s > car_s) && ((other_car_s - car_s) < 30))
+              if ((other_car_s > car_s) && ((other_car_s - car_s) < 30) && distance_to_front_car < closest_distance)
               {
+                closest_distance = distance_to_front_car;
+                cout<<"closest distance to the front car" << closest_distance<<endl;
 
-
+                if (closest_distance > 10) {
+                  // if(ref_vel > other_car_speed){
+                  // ref_vel = other_car_speed * 2.237;
+                  // }else{
+                  //   ref_vel-=0.237;
+                  // }
+                  
+                }
+                
                 illegal_distance = true;
-
-
 
 
 
@@ -312,255 +323,138 @@ int main() {
 
             ref_vel -= .224;
 
-            if (current_state == Lane_Keep) {
-
-              if (lane == 0) {
-                next_state = Prep_LCR;
-              } else if (lane > 1) {
-                next_state = Prep_LCL;
-              } else if (lane == 1) {
-
-                // if (best_lane_right) {
-                // next_state = Prep_LCR;
-                // } else {
-                next_state = Prep_LCL;
-                // }
-              }
-            }
-            //transition
-            current_state = next_state;
+            
             // cout << "state changed to ---> " << current_state << endl;
             float gap = 0;
+            manoeuvre_safe = false;
+            bool lane_safe = true;
             for (int i = 0; i < sensor_fusion.size(); i++)
             {
+              float other_car_d = sensor_fusion[i][6];
 
 
               // cout << "preparing lane change" << endl;
 
 
-              if (current_state == Prep_LCL) {
+              if (current_state == Lane_Keep ) {
+
+              if (lane != 0) {
+                next_state = Prep_LCL;
+              } else if (lane != 2) {
+                next_state = Prep_LCR;
+              } 
+              //transition
+            current_state = next_state;
+             }
+              bool left_lane_safe = true;
+              if (current_state == Prep_LCL ) {
                 cout << "looking at the left lane" << endl;
 
 
-
-
-                int other_car_id = sensor_fusion[i][0];
-                double other_car_x = sensor_fusion[i][1];
-                double other_car_y = sensor_fusion[i][2];
-                double other_car_vx = sensor_fusion[i][3];
-                double other_car_vy = sensor_fusion[i][4];
-                float other_car_s = sensor_fusion[i][5];
-                float other_car_d = sensor_fusion[i][6];
                 if ((other_car_d < (2 + 4 * (lane - 1) + 2)) && (other_car_d > (2 + 4 * (lane - 1) - 2)) ) {
-
+                  double other_car_vx = sensor_fusion[i][3];
+                  double other_car_vy = sensor_fusion[i][4];
+                  float other_car_s = sensor_fusion[i][5];
                   double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
                   other_car_s += ((double) prev_size * 0.02 * other_car_speed);
+                  double dist_s = other_car_s - car_s;
 
-                  
-                  if (sensor_fusion.size() > 2) {
-
-                    //check gap in left lane
-                    float second_car_s = sensor_fusion[i + 1][5];
-                    float second_car_vx = sensor_fusion[i + 1][5];
-                    float second_car_vy = sensor_fusion[i + 1][5];
-
-
-                    // predict where the other car will be in the future
-                    double other_car_speed = sqrt(second_car_vx * second_car_vx + second_car_vy * second_car_vy);
-
-                    second_car_s += ((double) prev_size * 0.02 * other_car_speed);
-
-                    gap = abs(other_car_s - second_car_s);
-                    cout << "gap: " << gap << endl;
-                    cout << "other car s on the left " << other_car_s << endl;
-                    cout << "second car s on the left " << second_car_s << endl;
-                    cout << "my car s " << car_s << endl;
-                    cout << "my car - other car" << (car_s - other_car_s)<<endl;
-                    cout << "my car - second car" << (car_s - second_car_s)<<endl;
-                    if (gap > 500 && (abs(second_car_s - car_s) > 100 )  && (abs(other_car_s - car_s) > 100)) {
-                      cout << "changing state LCL" << endl;
-                      current_state = LCL;
-                      manoeuvre_safe = true;
-
+                  if (dist_s < 30 && dist_s > -50) {
+                    cout << "changing state LCL not safe" << endl;
+                    lane_safe = false;
+                    if(lane == 1){
+                      current_state = Lane_Keep;
+                      next_state = Prep_LCR;
+                      left_lane_safe = false;
+                      current_state = next_state;
+                      cout << "switching state PREP CLR " << endl;
                     }
 
 
                   }
 
-                  // if(sensor_fusion.size() == 1){
-                  //   if(other_car_s < car_s - 50){
-                  //     current_state = LCL;
-                  //   }
-
-                  // }
-
-
-
-
-                  // cout << "checking left line " << endl;
-                }
-              } else if (current_state == Prep_LCR) {
-                cout << "Looking a righ lane " << endl;
-                int other_car_id = sensor_fusion[i][0];
-                double other_car_x = sensor_fusion[i][1];
-                double other_car_y = sensor_fusion[i][2];
-                double other_car_vx = sensor_fusion[i][3];
-                double other_car_vy = sensor_fusion[i][4];
-                float other_car_s = sensor_fusion[i][5];
-                float other_car_d = sensor_fusion[i][6];
-                if ((other_car_d < (2 + 4 * (lane + 1) + 2)) && (other_car_d > (2 + 4 * (lane + 1) - 2)) ) {
-
-                  double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
-                  other_car_s += ((double) prev_size * 0.02 * other_car_speed);
-
-                  // cout << "data car s " << other_car_s << endl;
-                  // cout << "my car s " << car_s << endl;
-                  if (sensor_fusion.size() > 2) {
-
-                    //check gap in left lane
-                    float second_car_s = sensor_fusion[i + 1][5];
-                    float second_car_vx = sensor_fusion[i + 1][5];
-                    float second_car_vy = sensor_fusion[i + 1][5];
-
-
-                    // predict where the other car will be in the future
-                    double other_car_speed = sqrt(second_car_vx * second_car_vx + second_car_vy * second_car_vy);
-
-                    second_car_s += ((double) prev_size * 0.02 * other_car_speed);
-
-                    gap = abs(other_car_s - second_car_s);
-
-                    cout << "gap: " << gap << endl;
-                    cout << "other car s  " << other_car_s << endl;
-                    cout << "second car s " << second_car_s << endl;
-                    cout << "my car s " << car_s << endl;
-                    cout << " (my car - other car) =" << (car_s - other_car_s)<<endl;
-                    cout << "(my car - second car) = " << (car_s - second_car_s)<<endl;
-
-                    if (gap > 500 && (abs(second_car_s - car_s) > 100 )  && (abs(other_car_s - car_s) > 100)) {
-                      cout << "changing state LCR" << endl;
-                      current_state = LCR;
-                      manoeuvre_safe = true;
-
-                    } 
-                  //   if(sensor_fusion.size() == 1){
-                  //   if(other_car_s < car_s - 50){
-                  //     current_state = LCL;
-                  //   }
-
-                  // }
-
-
+                  if (lane_safe && abs(dist_s) > 25 ) {
+                    manoeuvre_safe = true;
+                    cout << "changing state LCL safe" << endl;
+                    current_state = LCL;
 
                   }
 
+                  cout << "left lane gap: " << dist_s << endl;
 
+                }
+              } else if (current_state == Prep_LCR) {
 
+                if ((other_car_d < (2 + 4 * (lane + 1) + 2)) && (other_car_d > (2 + 4 * (lane + 1) - 2)) ) {
+                  cout << "Looking a righ lane " << endl;
+                  double other_car_vx = sensor_fusion[i][3];
+                  double other_car_vy = sensor_fusion[i][4];
+                  float other_car_s = sensor_fusion[i][5];
+                  float other_car_d = sensor_fusion[i][6];
+                  double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
+                  other_car_s += ((double) prev_size * 0.02 * other_car_speed);
 
-                  // cout << "checking right line safty" << endl;
+                  double dist_s = other_car_s - car_s;
+
+                  if (dist_s < 30 && dist_s > -50) {
+                    cout << "changing state LCR not safe" << endl;
+                    lane_safe = false;
+                    if(lane == 1 && !left_lane_safe){
+                      current_state = Lane_Keep;
+                      next_state = Prep_LCL;
+                      current_state = next_state;
+                      cout << "switching state PREP LCL " << endl;
+                    }
+
+                  }
+
+                  if (lane_safe && abs(dist_s) > 25 ) {
+                    manoeuvre_safe = true;
+                    cout << "changing state LCR safe" << endl;
+                    current_state = LCR;
+
+                  }
+                  cout << "right lane gap: " << dist_s << endl;
+
                 }
               }
 
 
 
-
-
-              //  //if the car is in the same lane as our car then we
-              //  //are interested to control car speed and distance
-              //  if(lane >0 && (other_car_d < (2+4*(lane-1)+2)) && (other_car_d > (2+4*(lane-1)-2))  ){
-              //   //predict where the other car will be in the future
-              //   double other_car_speed = sqrt(other_car_vx*other_car_vx+other_car_vy*other_car_vy);
-
-              //   other_car_s+= ((double) prev_size*0.02*other_car_speed);
-              //   cout<<"checking left line safty"<<endl;
-
-              //   if(car_s > (other_car_s+60)){
-              //     cout<<"manoeuvre_safe"<<endl;
-              //     manoeuvre_safe = true;
-
-              //   }else{
-              //      cout<<"manoeuvre_not_safe"<<endl;
-              //   }
-
-              //   }
-
-              //   if((lane == 0) && (other_car_d < (2+4*(lane+1)+2)) && (other_car_d > (2+4*(lane+1)-2))){
-              //     //predict where the other car will be in the future
-              //   double other_car_speed = sqrt(other_car_vx*other_car_vx+other_car_vy*other_car_vy);
-
-              //   other_car_s+= ((double) prev_size*0.02*other_car_speed);
-              //   cout<<"checking left line safty"<<endl;
-
-              //   if(car_s > (other_car_s+60)){
-              //     cout<<"manoeuvre_safe"<<endl;
-              //     manoeuvre_safe = true;
-
-              //   }else{
-              //      cout<<"manoeuvre_not_safe"<<endl;
-              //   }
-              //   }
+              
 
 
 
-              // }
-              if(illegal_distance && manoeuvre_safe ){
-
-              if (current_state == LCL) {
-                lane -= 1;
-                cout << "lane keep mode!"<< endl;
-                next_state = Lane_Keep;
+              if ( manoeuvre_safe) {
+                cout << "manoeuvre_safe with closest distance " << closest_distance<< endl;
+                if (current_state == LCL) {
+                  lane -= 1;
+                  // cout << "lane keep mode!" << endl;
+                  next_state = Lane_Keep;
+                }
+                if (current_state == LCR) {
+                  lane += 1;
+                  // cout << "lane keep mode!" << endl;
+                  next_state = Lane_Keep;
+                }
+                manoeuvre_safe = false;
+                current_state = next_state;
               }
-              if (current_state == LCR) {
-                lane += 1;
-                cout << "lane keep mode!"<< endl;
-                next_state = Lane_Keep;
-              }
-              manoeuvre_safe = false;
-            }
 
-
-              current_state = next_state;
-
-
-              // // if (manoeuvre_safe) {
-              // switch (current_state) {
-
-              // case LCL :
-              //   lane -= 1;
-              //   current_state = Lane_Keep;
-              //   cout << "going to left lane" << endl;
-              //   break;
-
-              // case LCR :
-              //   lane += 1;
-              //   cout << "going to  right lane" << endl;
-              //   current_state = Lane_Keep;
-              //   break;
-              // case Lane_Keep:
-              //   lane = lane + 0;
-              //   cout << "keeping the lane" << endl;
-              //   current_state = Lane_Keep;
-              //   break;
-              // case Prep_LCL:
-              //   current_state = Prep_LCL;
-              //   break;
-              // case Prep_LCR:
-              //   current_state = Prep_LCR;
-              //   break;
-              // }
-
-
-              //   manoeuvre_safe = false;
-              //   cout << "manouvre reset to false" << endl;
+              
+                   
 
             }
-
-
+     
+            current_state = next_state;
           }
+
           else if (ref_vel < 49.5 ) {
             ref_vel += .224;
           }
-
+          cout <<"current_state: "<< current_state<<endl;
+          cout << "current_lane: " << lane <<endl;
+          cout << "closest_distance: " << closest_distance <<endl;
 
 
 
