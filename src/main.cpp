@@ -328,6 +328,7 @@ int main() {
             float gap = 0;
             manoeuvre_safe = false;
             bool lane_safe = true;
+            bool take_over = false;
             for (int i = 0; i < sensor_fusion.size(); i++)
             {
               float other_car_d = sensor_fusion[i][6];
@@ -359,7 +360,7 @@ int main() {
                   other_car_s += ((double) prev_size * 0.02 * other_car_speed);
                   double dist_s = other_car_s - car_s;
 
-                  if (dist_s < 30 && dist_s > -50) {
+                  if (dist_s < 45 && dist_s > -15) {
                     cout << "changing state LCL not safe" << endl;
                     lane_safe = false;
                     if(lane == 1){
@@ -373,11 +374,12 @@ int main() {
 
                   }
 
-                  if (lane_safe && abs(dist_s) > 25 ) {
+                  if (lane_safe && abs(dist_s) > 32 ) {
                     manoeuvre_safe = true;
                     cout << "changing state LCL safe" << endl;
+                    if(!take_over){
                     current_state = LCL;
-
+                  }
                   } else {
                     closest_distance = dist_s;
                     current_state = Lane_Keep;
@@ -399,7 +401,7 @@ int main() {
 
                   double dist_s = other_car_s - car_s;
 
-                  if (dist_s < 30 && dist_s > -50) {
+                  if (dist_s < 45 && dist_s > -15) {
                     cout << "changing state LCR not safe" << endl;
                     lane_safe = false;
                     if(lane == 1 && !left_lane_safe){
@@ -411,10 +413,12 @@ int main() {
 
                   }
 
-                  if (lane_safe && abs(dist_s) > 25  ) {
+                  if (lane_safe && abs(dist_s) > 32  ) {
                     manoeuvre_safe = true;
                     cout << "changing state LCR safe" << endl;
+                    if(!take_over){
                     current_state = LCR;
+                    }
 
                   } else{
                     closest_distance = dist_s;
@@ -435,26 +439,29 @@ int main() {
                 cout << "manoeuvre_safe with closest distance " << closest_distance<< endl;
                 if (current_state == LCL) {
                   lane -= 1;
+                  take_over =true;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
                   left_lane_safe = true;
                 }
                 if (current_state == LCR) {
                   lane += 1;
+                  take_over = true;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
                   left_lane_safe = true;
                 }
-                manoeuvre_safe = false;
-                current_state = next_state;
+                
+                // current_state = next_state;
               }
 
               
                    
-
+current_state = next_state;
+manoeuvre_safe = false;
             }
      
-            current_state = next_state;
+            
           }
 
           else if (ref_vel < 49.5 ) {
