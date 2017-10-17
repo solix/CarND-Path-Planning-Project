@@ -379,11 +379,9 @@ int main() {
                     cout << "changing state LCL safe" << endl;
                     if(!take_over){
                     current_state = LCL;
+                    left_lane_safe = true;
                   }
-                  } else {
-                    closest_distance = dist_s;
-                    current_state = Lane_Keep;
-                  }
+                  } 
 
                   cout << "left lane gap: " << dist_s << endl;
 
@@ -418,12 +416,10 @@ int main() {
                     cout << "changing state LCR safe" << endl;
                     if(!take_over){
                     current_state = LCR;
+                    left_lane_safe = true;
                     }
 
-                  } else{
-                    closest_distance = dist_s;
-                    current_state = Lane_Keep;
-                  }
+                  } 
                   cout << "right lane gap: " << dist_s << endl;
 
                 }
@@ -435,6 +431,14 @@ int main() {
 
 
 
+
+              
+                   
+
+
+            }
+     
+            
               if ( manoeuvre_safe) {
                 cout << "manoeuvre_safe with closest distance " << closest_distance<< endl;
                 if (current_state == LCL) {
@@ -442,26 +446,18 @@ int main() {
                   take_over =true;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
-                  left_lane_safe = true;
+                  // left_lane_safe = true;
                 }
                 if (current_state == LCR) {
                   lane += 1;
                   take_over = true;
                   // cout << "lane keep mode!" << endl;
                   next_state = Lane_Keep;
-                  left_lane_safe = true;
+                  // left_lane_safe = true;
                 }
-                
-                // current_state = next_state;
+                manoeuvre_safe = false;
+                current_state = next_state;
               }
-
-              
-                   
-current_state = next_state;
-manoeuvre_safe = false;
-            }
-     
-            
           }
 
           else if (ref_vel < 49.5 ) {
