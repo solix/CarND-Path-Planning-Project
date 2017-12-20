@@ -262,15 +262,20 @@ int main() {
           int prev_size = previous_path_x.size();
           //My TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
 
-          //check sensor fusion list and monitor the cars in the road
+          //get a refrence of car to find next_waypoint
+            int wp_ref=-1;
+            int car_ref_x = car_x;
+            int car_ref_y = car_y;
+            int car_ref_yaw = deg2rad(car_yaw);
+            bool takeover = false;
+            bool left_lane_dangerous = false;
+            int closest_distance = 80000;
 
-          //frenet is a great help
-          if (prev_size > 0) {
-            car_s = end_path_s;
-          }
-          bool illegal_distance = false;
-          int closest_distance = 80000;
 
+            if(prev_size > 0){
+                car_s = end_path_s;
+            }
+            current_state = Lane_Keep;
 
           for (int i = 0; i < sensor_fusion.size(); i++)
           {
@@ -299,177 +304,118 @@ int main() {
                 closest_distance = distance_to_front_car;
                 cout<<"closest distance to the front car" << closest_distance<<endl;
 
-                if (closest_distance > 10) {
-                  // if(ref_vel > other_car_speed){
-                  // ref_vel = other_car_speed * 2.237;
-                  // }else{
-                  //   ref_vel-=0.237;
-                  // }
-                  
+
+
+                if (closest_distance > 15) {
+
+                   ref_vel -= 0.113 ;
+
                 }
-                
-                illegal_distance = true;
 
+                  if(ref_vel - 10 > other_car_speed){
+                  ref_vel -=0.231;
+                }
 
+                takeover = true;
 
               }
 
             }
           }
 
+            if(ref_vel < 49.5){
+                ref_vel+=0.123;
+            }
 
-
-          if (illegal_distance) {
-
-            ref_vel -= .224;
-
-            
-            // cout << "state changed to ---> " << current_state << endl;
-            float gap = 0;
-            manoeuvre_safe = false;
-            bool lane_safe = true;
-            bool take_over = false;
-            for (int i = 0; i < sensor_fusion.size(); i++)
-            {
-              float other_car_d = sensor_fusion[i][6];
-
-
-              // cout << "preparing lane change" << endl;
-
-
-              if (current_state == Lane_Keep ) {
-
+          if(takeover && current_state == Lane_Keep){
               if (lane != 0) {
-                next_state = Prep_LCL;
+                  current_state = Prep_LCL;
               } else if (lane != 2) {
-                next_state = Prep_LCR;
-              } 
-              //transition
-            current_state = next_state;
-             }
-              bool left_lane_safe = true;
-              if (current_state == Prep_LCL ) {
-                cout << "looking at the left lane" << endl;
-
-
-                if ((other_car_d < (2 + 4 * (lane - 1) + 2)) && (other_car_d > (2 + 4 * (lane - 1) - 2)) ) {
-                  double other_car_vx = sensor_fusion[i][3];
-                  double other_car_vy = sensor_fusion[i][4];
-                  float other_car_s = sensor_fusion[i][5];
-                  double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
-                  other_car_s += ((double) prev_size * 0.02 * other_car_speed);
-                  double dist_s = other_car_s - car_s;
-
-                  if (dist_s < 45 && dist_s > -15) {
-                    cout << "changing state LCL not safe" << endl;
-                    lane_safe = false;
-                    if(lane == 1){
-                      current_state = Lane_Keep;
-                      next_state = Prep_LCR;
-                      left_lane_safe = false;
-                      current_state = next_state;
-                      cout << "switching state PREP CLR " << endl;
-                    }
-
-
-                  }
-
-                  if (lane_safe && abs(dist_s) > 32 ) {
-                    manoeuvre_safe = true;
-                    cout << "changing state LCL safe" << endl;
-                    if(!take_over){
-                    current_state = LCL;
-                  }
-                  } else {
-                    closest_distance = dist_s;
-                    current_state = Lane_Keep;
-                  }
-
-                  cout << "left lane gap: " << dist_s << endl;
-
-                }
-              } else if (current_state == Prep_LCR) {
-
-                if ((other_car_d < (2 + 4 * (lane + 1) + 2)) && (other_car_d > (2 + 4 * (lane + 1) - 2)) ) {
-                  cout << "Looking a righ lane " << endl;
-                  double other_car_vx = sensor_fusion[i][3];
-                  double other_car_vy = sensor_fusion[i][4];
-                  float other_car_s = sensor_fusion[i][5];
-                  float other_car_d = sensor_fusion[i][6];
-                  double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
-                  other_car_s += ((double) prev_size * 0.02 * other_car_speed);
-
-                  double dist_s = other_car_s - car_s;
-
-                  if (dist_s < 45 && dist_s > -15) {
-                    cout << "changing state LCR not safe" << endl;
-                    lane_safe = false;
-                    if(lane == 1 && !left_lane_safe){
-                      current_state = Lane_Keep;
-                      next_state = Prep_LCL;
-                      current_state = next_state;
-                      cout << "switching state PREP LCL " << endl;
-                    }
-
-                  }
-
-                  if (lane_safe && abs(dist_s) > 32  ) {
-                    manoeuvre_safe = true;
-                    cout << "changing state LCR safe" << endl;
-                    if(!take_over){
-                    current_state = LCR;
-                    }
-
-                  } else{
-                    closest_distance = dist_s;
-                    current_state = Lane_Keep;
-                  }
-                  cout << "right lane gap: " << dist_s << endl;
-
-                }
+                  current_state = Prep_LCR;
               }
+          }
+
+          if(current_state == Prep_LCL){
+              manoeuvre_safe = true;
+              for (int i = 0; i < sensor_fusion.size(); i++){
+                  //get other_car_d coordinates
+                  float target_car_d = sensor_fusion[i][6];
+                  if ((target_car_d < (2 + 4 * (lane - 1) + 2)) && (target_car_d > (2 + 4 * (lane - 1) - 2)) ) {
+                      double other_car_vx = sensor_fusion[i][3];
+                      double other_car_vy = sensor_fusion[i][4];
+                      float other_car_s = sensor_fusion[i][5];
+                      double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
+                      other_car_s += ((double) prev_size * 0.02 * other_car_speed);
+                      double dist_s = other_car_s - car_s;
+                      if(dist_s < 20 && dist_s > -20){
+                          manoeuvre_safe = false;
+                          left_lane_dangerous = true;
+                          current_state = Lane_Keep;
+
+                      }
+
+                      if(left_lane_dangerous && lane != 2 && current_state == Lane_Keep){
+                          current_state = Prep_LCR;
+                      }
+
+                      if(manoeuvre_safe && ref_vel +5 > other_car_speed){
+                          current_state = LCL;
+                      }
 
 
 
-              
+                  }
 
-
-
-              if ( manoeuvre_safe) {
-                cout << "manoeuvre_safe with closest distance " << closest_distance<< endl;
-                if (current_state == LCL) {
-                  lane -= 1;
-                  take_over =true;
-                  // cout << "lane keep mode!" << endl;
-                  next_state = Lane_Keep;
-                  left_lane_safe = true;
-                }
-                if (current_state == LCR) {
-                  lane += 1;
-                  take_over = true;
-                  // cout << "lane keep mode!" << endl;
-                  next_state = Lane_Keep;
-                  left_lane_safe = true;
-                }
-                
-                // current_state = next_state;
               }
+          }
 
-              
-                   
-current_state = next_state;
-manoeuvre_safe = false;
+            if(current_state == Prep_LCR){
+                manoeuvre_safe = true;
+                for (int i = 0; i < sensor_fusion.size(); i++){
+                    //get other_car_d coordinates
+                    float target_car_d = sensor_fusion[i][6];
+                    if ((target_car_d < (2 + 4 * (lane + 1) + 2)) && (target_car_d > (2 + 4 * (lane + 1) - 2)) ) {
+                        double other_car_vx = sensor_fusion[i][3];
+                        double other_car_vy = sensor_fusion[i][4];
+                        float other_car_s = sensor_fusion[i][5];
+                        double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
+                        other_car_s += ((double) prev_size * 0.02 * other_car_speed);
+                        double dist_s = other_car_s - car_s;
+
+                        if(dist_s < 20 && dist_s > -20){
+                            manoeuvre_safe = false;
+                            current_state = Lane_Keep;
+
+                        }
+
+
+
+                        if(manoeuvre_safe && ref_vel +5 > other_car_speed){
+                            current_state = LCR;
+                            left_lane_dangerous = false;
+                        }
+
+
+
+                    }
+
+                }
             }
-     
-            
-          }
 
-          else if (ref_vel < 49.5 ) {
-            ref_vel += .224;
-          }
-          // cout <<"current_state: "<< current_state<<endl;
-          // cout << "current_lane: " << lane <<endl;
-          // cout << "closest_distance: " << closest_distance <<endl;
+            if(current_state == LCL){
+                lane-=1;
+                takeover = false;
+
+            }
+
+            if(current_state == LCR){
+                lane+=1;
+                takeover = false;
+            }
+
+            if(!takeover){
+                current_state = Lane_Keep;
+            }
 
 
 
