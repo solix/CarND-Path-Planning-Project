@@ -40,8 +40,7 @@ If Ego car is approcaching obstacle, in order to avoid collision, Ego car veloci
  
  <img src="FSM.png">
  
- 
- ##### cost 
+ When car sees a vehicle in front, It starts to adjust its space relative to front vehicle, and It turns on the behaviour planner for rake over the front vehicle. Vehicle then monitors traffic on other lanes using sensorfusion data, and calculates a gap for manoeuvre. **Cost** is here defines when gap is less than 20 meter, Ego vehicle flags unsafe for manouvre and vehicle changes back it states to keep in lane. Other **Cost** is speed cost, that is when the vehicle in other lane that Ego vehicle is planning to be in the future, is going in slower speed. 
 
 
 #### The map of the highway is in data/highway_map.txt
