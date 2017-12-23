@@ -13,6 +13,8 @@ In this project your goal is to safely navigate around a virtual highway with ot
 ### PATH-PLANNER description
 ![Alt Text](overview.gif)
 #### Waypoint Generation
+![Alt text](https://en.wikipedia.org/wiki/Spline_(mathematics)#/media/File:Parametic_Cubic_Spline.svg)
+<img src="https://en.wikipedia.org/wiki/Spline_(mathematics)#/media/File:Parametic_Cubic_Spline.svg">
 
 #### Keep Car in Lane
 
