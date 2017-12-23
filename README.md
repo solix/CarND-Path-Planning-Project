@@ -15,11 +15,11 @@ In this project your goal is to safely navigate around a virtual highway with ot
 
 #### Waypoint Generation
 
-Given a list of available waypoints in the road, we need to define set of waypoints ahead of car in order to plan a path candidate that car travels next. There are many methods for generating a polynomial fit but most of them are limited to a n degree. In this project a better way for interpolating between points is choosen.
+Given a list of available way points in the road, we need to define set of waypoints ahead of car in order to plan a path candidate that car travels next. There are many methods for generating a polynomial fit but most of them are limited to a n degree. In this project a better way for interpolating between points is chosen.
 
 ###### spline
 
-spline is a piecewise interpolation between points by using second derivative of the line. That means it calculates the slope of the slope between two piece of waypoint and therafter fits a smooth line sothat the path generated is smooth and does not generate sharp angels for each waypoints. 
+spline is a piecewise interpolation between points by using second derivative of the line. That means it calculates the slope of the slope between two piece of waypoint and thereafter fits a smooth line so-that the path generated is smooth and does not generate sharp angels for each waypoints. 
 
 <img src="spline.png">
 
@@ -30,17 +30,17 @@ since location of the car's is given we will translate the car's position in [Fr
  <img src="Frenet.png">
  
 #### Obstacle Detection (Sensor fusion)
-Sensor fusion data will help us detect obstacles around us, By using the sensor fusion data and filtering the objects in the same lane line, Ego car is able to detect vehicles in front. like this if there is any car infront that is going slower than speed of the ego car, we can trigger an action for take over.
+Sensor fusion data will help us detect obstacles around us, By using the sensor fusion data and filtering the objects in the same lane line, Ego car is able to detect vehicles in front. like this if there is any car in-front that is going slower than speed of the ego car, we can trigger an action for take over.
 
 ##### Speed adjustments
-If Ego car is approcaching obstacle, in order to avoid collision, Ego car velocity should be adjusted according to the traffic. Logic behind this is that Ego car will adjust the speed according to the distance relative to the front vehicle. Ego vehicle also takes in to consideration max acceleration boundary in order to avoid jerk maximization.
+If Ego car is approaching obstacle, in order to avoid collision, Ego car velocity should be adjusted according to the traffic. Logic behind this is that Ego car will adjust the speed according to the distance relative to the front vehicle. Ego vehicle also takes in to consideration max acceleration boundary in order to avoid jerk maximization.
 ####  Manoeuvre in the highway
  ##### finite state machine design
  The State machine design is considering that the car only drives in the highway. This design is suggested in the lectures of SDC nano degree.
  
  <img src="FSM.png">
  
- When car sees a vehicle in front, It starts to adjust its space relative to front vehicle, and It turns on the behaviour planner for rake over the front vehicle. Vehicle then monitors traffic on other lanes using sensorfusion data, and calculates a gap for manoeuvre. **Cost** is here defines when gap is less than 20 meter, Ego vehicle flags unsafe for manouvre and vehicle changes back it states to keep in lane. Other **Cost** is speed cost, that is when the vehicle in other lane that Ego vehicle is planning to be in the future, is going in slower speed. 
+ When car sees a vehicle in front, It starts to adjust its space relative to front vehicle, and It turns on the behaviour planner for rake over the front vehicle. Vehicle then monitors traffic on other lanes using sensorfusion data, and calculates a gap for manoeuvre. **Cost** is here defines when gap is less than 20 meter, Ego vehicle flags unsafe for manoeuvre and vehicle changes back it states to keep in lane. Other **Cost** is speed cost, that is when the vehicle in other lane that Ego vehicle is planning to be in the future, is going in slower speed. 
  
  ##### lane changing decision making process
  For the Lane changing vehicle start looking at the possibilities to do manoeuvre, if there is enough gap between lane, a scenario will be described here where vehicle takes decision:
@@ -50,10 +50,10 @@ If Ego car is approcaching obstacle, in order to avoid collision, Ego car veloci
  ![Alt Text](scenario.gif)
  
  *Step by Step States*
- 1. Ego car recieves obstacle detection within 30 meter ahead froms sensor fusion data and flags Take over.
+ 1. Ego car receives obstacle detection within 30 meter ahead from sensor fusion data and flags Take over.
  2. Prepare Left lane take over : Ego car Checks first the left lane and calculates the gap in the radius of 20 meter around the Ego vehicle
  3. Prepare right lane takeover: Ego car observes left lane is not safe to take over, and switches to the right lane 
- 4. Gap is not enough: Ego vehicle recieves sensor fusion data from right lane and calculates the gap is not big enough, stays in Prepare Right lane state.
+ 4. Gap is not enough: Ego vehicle receives sensor fusion data from right lane and calculates the gap is not big enough, stays in Prepare Right lane state.
  5. Gap is good : Vehicle state changes to Left lane change and changes lane
  
  
