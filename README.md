@@ -9,17 +9,38 @@ You can download the Term3 Simulator which contains the Path Planning Project fr
 In this project your goal is to safely navigate around a virtual highway with other traffic that is driving +-10 MPH of the 50 MPH speed limit. You will be provided the car's localization and sensor fusion data, there is also a sparse map list of waypoints around the highway. The car should try to go as close as possible to the 50 MPH speed limit, which means passing slower traffic when possible, note that other cars will try to change lanes too. The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. The car should be able to make one complete loop around the 6946m highway. Since the car is trying to go 50 MPH, it should take a little over 5 minutes to complete 1 loop. Also the car should not experience total acceleration over 10 m/s^2 and jerk that is greater than 50 m/s^3.
 ### description of path planning algorithm
 ![Alt Text](overview.gif)
+
+
+
+
 #### Waypoint Generation
+
+Given a list of available waypoints in the road, we need to define set of waypoints ahead of car in order to plan a path candidate that car travels next. There are many methods for generating a polynomial fit but most of them are limited to a n degree. In this project a better way for interpolating between points is choosen.
+
+###### spline
+
+spline is a piecewise interpolation between points by using second derivative of the line. That means it calculates the slope of the slope between two piece of waypoint and therafter fits a smooth line sothat the path generated is smooth and does not generate sharp angels for each waypoints. 
+
 <img src="spline.png">
 
-#### Keep Car in Lane
-
+###### generate path within lane lines
+since location of the car's is given we will translate the car's position in [FrenetCoordinates](https://www.google.com)
+ so that we generate three spaced waypoints ahead of position `s`. This will make it east for us to deal with staying in the lane line. 
+ 
+ <img src="Frenet.png">
+ 
 #### Obstacle Detection (Sensor fusion)
-##### Speed adjustments
+Sensor fusion data will help us detect obstacles around us, By using the sensor fusion data and filtering the objects in the same lane line, Ego car is able to detect vehicles in front. like this if there is any car infront that is going slower than speed of the ego car, we can trigger an action for take over.
 
+##### Speed adjustments
+If Ego car is approcaching obstacle, in order to avoid collision, Ego car velocity should be adjusted according to the traffic. Logic behind this is that Ego car will adjust the speed according to the distance relative to the front vehicle. Ego vehicle also takes in to consideration max acceleration boundary in order to avoid jerk maximization.
 ####  Manoeuvre in the highway
- ##### constraints
- ##### finite state machine
+ ##### finite state machine design
+ The State machine design is considering that the car only drives in the highway. This design is suggested in the lectures of SDC nano degree.
+ 
+ <img src="FSM.png">
+ 
+ 
  ##### cost 
 
 
