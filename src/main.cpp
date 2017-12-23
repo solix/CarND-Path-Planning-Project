@@ -333,7 +333,7 @@ int main() {
             }
           }
 
-            if(ref_vel < 49.5){
+            if(ref_vel < 45.5){
                 ref_vel+=0.123;
             }
 
