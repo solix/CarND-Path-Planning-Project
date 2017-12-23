@@ -322,7 +322,8 @@ int main() {
                    takeover = true;
 
                 }else if(closest_distance<7){
-                  takeover = false;
+                  ref_vel -=0.287 ;
+                  takeover = true;
                 }else{
                   ref_vel-=0.193;
                   takeover = true;
