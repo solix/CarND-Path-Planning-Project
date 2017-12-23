@@ -270,6 +270,7 @@ int main() {
             bool takeover = false;
             bool left_lane_dangerous = false;
             int closest_distance = 80000;
+            std::vector<double> avg_vel ;
 
 
             if(prev_size > 0){
@@ -294,6 +295,7 @@ int main() {
               //predict where the other car will be in the future
               double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
 
+
               other_car_s += ((double) prev_size * 0.02 * other_car_speed);
 
               int distance_to_front_car = (other_car_s - car_s);
@@ -306,17 +308,25 @@ int main() {
 
 
 
-                if (closest_distance > 15) {
+                if (closest_distance > 20) 
+                {
 
                    ref_vel -= 0.113 ;
+                   takeover = true;
 
                 }
+                else if(closest_distance < 15 )
+                {
 
-                  if(ref_vel - 10 > other_car_speed){
-                  ref_vel -=0.231;
+                   ref_vel -=0.287 ;
+                   takeover = true;
+
+                }else if(closest_distance<7){
+                  takeover = false;
+                }else{
+                  ref_vel-=0.193;
+                  takeover = true;
                 }
-
-                takeover = true;
 
               }
 
@@ -346,6 +356,7 @@ int main() {
                       float other_car_s = sensor_fusion[i][5];
                       double other_car_speed = sqrt(other_car_vx * other_car_vx + other_car_vy * other_car_vy);
                       other_car_s += ((double) prev_size * 0.02 * other_car_speed);
+                      avg_vel.push_back(other_car_speed*2.237);
                       double dist_s = other_car_s - car_s;
                       if(dist_s < 20 && dist_s > -20){
                           manoeuvre_safe = false;
@@ -358,8 +369,14 @@ int main() {
                           current_state = Prep_LCR;
                       }
 
-                      if(manoeuvre_safe && ref_vel +5 > other_car_speed){
+                      if(manoeuvre_safe ){
+                         
+                          if(car_s < other_car_s && ref_vel > other_car_speed*2.237){
+                              takeover = false;
+                              current_state = Lane_Keep;
+                           }else{
                           current_state = LCL;
+                          }
                       }
 
 
@@ -390,9 +407,17 @@ int main() {
 
 
 
-                        if(manoeuvre_safe && ref_vel +5 > other_car_speed){
+                        if(manoeuvre_safe ){
+
+                          if(car_s < other_car_s && ref_vel > other_car_speed*2.237){
+
+                              takeover = false;
+                              current_state = Lane_Keep;
+                           }else{
+
                             current_state = LCR;
                             left_lane_dangerous = false;
+                           }
                         }
 
 
