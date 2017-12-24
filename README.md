@@ -54,7 +54,7 @@ If Ego car is approaching obstacle, in order to avoid collision, Ego car velocit
  2. Prepare Left lane take over : Ego car Checks first the left lane and calculates the gap in the radius of 20 meter around the Ego vehicle
  3. Prepare right lane takeover: Ego car observes left lane is not safe to take over, and switches to the right lane 
  4. Gap is not enough: Ego vehicle receives sensor fusion data from right lane and calculates the gap is not big enough, stays in Prepare Right lane state.
- 5. Gap is good : Vehicle state changes to Left lane change and changes lane
+ 5. Gap is good : Vehicle state changes to Right lane change and changes the lane safely
  
  
  
