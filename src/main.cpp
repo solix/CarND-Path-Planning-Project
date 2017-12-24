@@ -267,10 +267,13 @@ int main() {
             int car_ref_x = car_x;
             int car_ref_y = car_y;
             int car_ref_yaw = deg2rad(car_yaw);
+            int ref_s;
             bool takeover = false;
             bool left_lane_dangerous = false;
             int closest_distance = 80000;
             std::vector<double> avg_vel ;
+            bool danger_zone = false;
+            double target_speed = 45;
 
 
             if(prev_size > 0){
@@ -297,45 +300,48 @@ int main() {
 
 
               other_car_s += ((double) prev_size * 0.02 * other_car_speed);
-
+              ref_s = other_car_s;
               int distance_to_front_car = (other_car_s - car_s);
 
               //if we are approaching a car infront then do some action
               if ((other_car_s > car_s) && ((other_car_s - car_s) < 30) && distance_to_front_car < closest_distance)
               {
                 closest_distance = distance_to_front_car;
-                cout<<"closest distance to the front car" << closest_distance<<endl;
-
 
 
                 if (closest_distance > 20) 
                 {
 
-                   ref_vel -= 0.113 ;
+                   ref_vel -= 0.224 ;
                    takeover = true;
+                  
+
+                }else if(closest_distance < 20){
+                  ref_vel -= 1.6*0.224;
+                  danger_zone = true;
+                  target_speed = other_car_speed*2.237-5;
+                  cout<<"vehicle in front too close, slowing down rapidly"<<endl;
+                  takeover = true;  
 
                 }
-                else if(closest_distance < 15 )
-                {
 
-                   ref_vel -=0.287 ;
-                   takeover = true;
+                takeover = true;
 
-                }else if(closest_distance<7){
-                  ref_vel -=0.287 ;
-                  takeover = true;
-                }else{
-                  ref_vel-=0.193;
-                  takeover = true;
-                }
+                
 
               }
+
+
 
             }
           }
 
-            if(ref_vel < 45.5){
-                ref_vel+=0.123;
+            if(ref_vel < 49.5 && !danger_zone){
+                ref_vel+=0.224;
+            }else if(danger_zone && ref_vel < target_speed){
+               
+                ref_vel+=0.224;
+               
             }
 
           if(takeover && current_state == Lane_Keep){
@@ -370,14 +376,18 @@ int main() {
                           current_state = Prep_LCR;
                       }
 
+                        if((other_car_s - ref_s) < 10 && (other_car_s - ref_s) > -10 ){
+                          manoeuvre_safe = false;
+                          cout<<"Manouvere left not optimal"<<endl;
+                          left_lane_dangerous = true;
+                          current_state = Lane_Keep;
+                        }
+
                       if(manoeuvre_safe ){
                          
-                          if(car_s < other_car_s && ref_vel > other_car_speed*2.237){
-                              takeover = false;
-                              current_state = Lane_Keep;
-                           }else{
+                          
                           current_state = LCL;
-                          }
+                          
                       }
 
 
@@ -406,19 +416,20 @@ int main() {
 
                         }
 
+                        if((other_car_s - ref_s) < 10 && (other_car_s - ref_s) > -10 ){
+                          manoeuvre_safe = false;
+                          cout<<"Manouvere right not optimal"<<endl;
+                          current_state = Lane_Keep;
 
+                        }
 
                         if(manoeuvre_safe ){
 
-                          if(car_s < other_car_s && ref_vel > other_car_speed*2.237){
-
-                              takeover = false;
-                              current_state = Lane_Keep;
-                           }else{
+                          
 
                             current_state = LCR;
                             left_lane_dangerous = false;
-                           }
+                           
                         }
 
 
